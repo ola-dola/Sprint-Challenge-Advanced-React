@@ -10,7 +10,7 @@ export default function Players({players}) {
   return (
     <div>
       <h1>Lorem ipsummm</h1>
-      <img src={img} alt="randoms!!" />
+      <img src={img.src} alt="randoms!!" />
       {
         players.map(player => {
           return <PlayerCard player={player} />
