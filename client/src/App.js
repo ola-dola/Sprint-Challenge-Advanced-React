@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import Players from './Components/Players';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      players: ""
+      players: []
     }
   }
 
@@ -23,10 +24,12 @@ class App extends Component {
       });
   }
 
-  render() { 
+  render() {
+    const {players} = this.state;
+
     return (
       <div className="App">
-        pol
+        <Players players={players} />
       </div>
     );
   }
